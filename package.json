@@ -1,5 +1,5 @@
 {
-  "name": "cinderbyte-base",
+  "name": "cinderbyte",
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
@@ -10,11 +10,19 @@
   "peerDependencies": {
     "typescript": "^5"
   },
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "pre-commit": [
+    "build"
+  ],
+  "files": [
+    "dist"
+  ],
   "dependencies": {
-    "@types/set-cookie-parser": "^2.4.10",
     "axios": "^1.13.6",
     "cheerio": "^1.2.0",
-    "cors": "^2.8.6",
-    "set-cookie-parser": "^3.0.1"
+    "cinderbyte-bypass-ddg": "^0.0.1",
+    "cors": "^2.8.6"
   }
 }

@@ -22,6 +22,9 @@ abstract class AnimeParser extends BaseParser {
     perPage: number,
     ...args: any[]
   ): Promise<AnimeSearchResultsInterface>;
+
+  abstract getAnimeInfo(...args: any): Promise<any>;
+  abstract getEpisodeSources(...args: any): Promise<any>;
 }
 
 export default AnimeParser;

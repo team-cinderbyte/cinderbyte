@@ -1,4 +1,4 @@
-import BaseProvider from "../providers";
+import BaseProvider from "../providers/baseProvider";
 
 abstract class BaseParser extends BaseProvider {
   /**
